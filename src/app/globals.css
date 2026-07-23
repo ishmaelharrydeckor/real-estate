@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-deep: #05241C;
+  --color-primary-light: #0D3E31;
+  --color-bg-warm: #FAF8F5;
+  --color-accent-gold: #C99738;
+  --color-accent-gold-hover: #B8852B;
+  --color-text-dark: #1E2321;
+  --color-text-muted: #626A66;
+  
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+:root {
+  --background: #FAF8F5;
+  --foreground: #1E2321;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0D3E31;
+  border-radius: 5px;
+  border: 2px solid #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C99738;
+}
+
+/* Custom Animations */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(201, 151, 56, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 16px rgba(201, 151, 56, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(201, 151, 56, 0);
+  }
+}
+
+.pulse-button {
+  animation: pulse-ring 2.5s infinite;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero overlay gradient */
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(5, 36, 28, 0.4), rgba(5, 36, 28, 0.85));
+}
