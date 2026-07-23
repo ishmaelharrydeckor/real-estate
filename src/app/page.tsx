@@ -118,6 +118,7 @@ export default function Home() {
             fill
             priority
             className="object-cover object-center opacity-40 scale-100"
+            unoptimized={true}
           />
           {/* Custom Elegant Gradient Overlay */}
           <div className="absolute inset-0 hero-gradient" />
@@ -274,6 +275,7 @@ export default function Home() {
                     alt="Kofi Mensah"
                     fill
                     className="object-cover"
+                    unoptimized={true}
                   />
                 </div>
                 <div>
@@ -296,6 +298,7 @@ export default function Home() {
                     alt="Ama Osei"
                     fill
                     className="object-cover"
+                    unoptimized={true}
                   />
                 </div>
                 <div>
@@ -318,6 +321,7 @@ export default function Home() {
                     alt="Kwame Boateng"
                     fill
                     className="object-cover"
+                    unoptimized={true}
                   />
                 </div>
                 <div>
@@ -339,6 +343,7 @@ export default function Home() {
             alt="Accra Luxury Estate Background"
             fill
             className="object-cover"
+            unoptimized={true}
           />
         </div>
         <Container className="relative z-10 flex flex-col items-center text-center">

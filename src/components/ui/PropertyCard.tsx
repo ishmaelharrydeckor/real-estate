@@ -53,6 +53,7 @@ export default function PropertyCard({ property, index = 0 }: PropertyCardProps)
           sizes="(max-w-7xl) 33vw, (max-w-md) 50vw, 100vw"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           priority={index < 2}
+          unoptimized={true}
         />
         
         {/* Status Tag */}
